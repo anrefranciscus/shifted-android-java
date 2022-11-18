@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FormKuliner"
+    android:background="@drawable/pexels_monicore">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/indigo_daisy"
+        android:gravity="center"
+        android:text="Kuliner Viral"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp">
+
+        <EditText
+            android:id="@+id/inputNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/et_custom"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="Nama"
+            android:inputType="text"
+            android:padding="10sp" />
+
+        <EditText
+            android:id="@+id/inputKeterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputNama"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/et_custom"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="Keterangan"
+            android:inputType="text"
+            android:padding="10sp" />
+
+        <EditText
+            android:id="@+id/inputKontributor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputKeterangan"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/et_custom"
+            android:hint="Kontributor"
+            android:inputType="text"
+            android:padding="10sp"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <EditText
+            android:id="@+id/inputLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputKontributor"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/et_custom"
+            android:hint="Latitude"
+            android:inputType="text"
+            android:padding="10sp"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <EditText
+            android:id="@+id/inputLongtitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputLatitude"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/et_custom"
+            android:hint="Longtitude"
+            android:inputType="text"
+            android:padding="10sp" />
+
+
+        <EditText
+            android:id="@+id/inputStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputLongtitude"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/et_custom"
+            android:hint="Status"
+            android:inputType="text"
+            android:padding="10sp" />
+
+        <Button
+            android:id="@+id/btnShowMap"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputStatus"
+            android:background="@drawable/btn_custom"
+            android:text="Show Map"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnShowMap"
+            android:background="@drawable/btn_custom"
+            android:text="SIMPAN"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>
